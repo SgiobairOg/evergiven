@@ -15,7 +15,7 @@ const getCurrentStatus = async () => {
     const aisSource = 'https://www.vesselfinder.com/vessels/EVER-GIVEN-IMO-9811000-MMSI-353136000'
     const puppeteer = require('puppeteer');
 
-    const browser = await puppeteer.launch({ args: ["--proxy-server='direct://'", '--proxy-bypass-list=*']})
+    const browser = await puppeteer.launch({headless: true})
     const page = await browser.newPage()
     await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36')
     await page.goto(aisSource)

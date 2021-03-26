@@ -11,7 +11,7 @@
     <header class="evergiven">
         <h1 class="evergiven__name">Ever Given</h1>
     </header>
-    <p class="evergiven__status">{{data.isSheStuck | response}}</p>
-    <p class="evergiven__time">We last checked {{data.currentTime.date}} at {{ data.currentTime.time }}</p>
+    <p class="evergiven__status">{{data.currentStatus.stuck | response}}</p>
+    <p class="evergiven__time">We last checked {{data.currentTime.date}} at {{ data.currentTime.time }} and she's at {{data.currentStatus.lat}}, {{data.currentStatus.long}} with a speed of {{data.currentStatus.speed}}</p>
 </body>
 </html>

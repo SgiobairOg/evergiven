@@ -20,6 +20,7 @@
   "homepage": "https://github.com/SgiobairOg/evergiven#readme",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "clean-css": "^5.1.2"
+    "clean-css": "^5.1.2",
+    "puppeteer": "^8.0.0"
   }
 }

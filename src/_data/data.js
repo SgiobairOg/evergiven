@@ -37,6 +37,8 @@ const getCurrentStatus = async () => {
     
     const stuck = (lat, speed) => between(lat, 30, 30.0333) && speed <= 1.0 
 
+    browser.close()
+
     return {
         heading,
         speed,

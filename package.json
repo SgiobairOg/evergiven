@@ -1,0 +1,24 @@
+{
+  "name": "evergiven",
+  "version": "1.0.0",
+  "description": "Ever Given is the massive Evergreen cargo ship that caught the worlds attention when she got wedged sideways in the Suez canal causing a blockage of all ship traffic through the area. This is just a small dumb website that says whether she's still there.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --input=./src --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SgiobairOg/evergiven.git"
+  },
+  "author": "Jason Wilson",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/SgiobairOg/evergiven/issues"
+  },
+  "homepage": "https://github.com/SgiobairOg/evergiven#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "clean-css": "^5.1.2"
+  }
+}

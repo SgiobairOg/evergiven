@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Ever Given Still Stuck?</title>
+    <style>{% include main.css | cssmin | safe %}</style>
+</head>
+<body>
+    <header class="evergiven">
+        <h1 class="evergiven__name">Ever Given</h1>
+    </header>
+    <p class="evergiven__status">{{data.isSheStuck | response}}</p>
+    <p class="evergiven__time">We last checked {{data.currentTime.date}} at {{ data.currentTime.time }}</p>
+</body>
+</html>

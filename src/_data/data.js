@@ -35,7 +35,7 @@ const getCurrentStatus = async () => {
         return positionParam.querySelector('.v3').textContent.split('/')
     })
     
-    const stuck = (lat, speed) => between(lat, 30, 30.0333) && speed <= 1.0 
+    const stuck = (lat, speed) => false
 
     browser.close()
 
